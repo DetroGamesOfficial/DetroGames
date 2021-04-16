@@ -1,0 +1,157 @@
+<html>
+<head>
+<meta content="The place to find epic games for free." property="og:description">
+<meta content="https://detrogames.com/new/play" property="og:url">
+<meta content="https://cdn.discordapp.com/attachments/752340216395595796/766122031648604200/costume3_2_1.png" property="og:image">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<title>Detrogames - Fun Free Games</title>
+<meta name="viewport" content="width=device-width, initial-scale=.5">
+<body>
+<div class="block"></div>
+<div class="menu">
+<a href="games" class="menu-link">Games</a>
+<a href="originals" class="menu-link">Originals</a>
+<a href="about" class="menu-link">About</a>
+<a href="settings" class="menu-link">Settings</a>
+</div>
+</body>
+<script>
+var id = localStorage.getItem("id");
+var au = localStorage.getItem("au");
+var gn = localStorage.getItem("gn");
+var username = localStorage.getItem('username');
+document.write('<iframe src="https://turbowarp.org/' +id+ '/embed?username='+username+'" width="499" height="416" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>');
+document.write('<h2 id="gamename">'+gn+'</h2>');
+document.write('<h2 id="author">'+au+'</h2>');
+</script>
+<style>
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+h7{
+opacity:0;
+position:absolute;
+left:20%;
+top:40%;
+color:white;
+font-size:30px;
+}
+body{
+margin:0;
+font-family: 'Varela Round', sans-serif;
+font-size:30px;
+display:flex;
+flex-direction:row;
+background:#212121;
+}
+.menu{
+background: #2B2B2B;
+height:100%;
+width:18vw;
+display:flex;
+flex-direction:column;
+top:0;
+left:0;
+z-index:999;
+}
+.block{
+width:0px;
+height:0px;
+}
+iframe{
+height: calc(100% + 47px);
+width:92vw;
+margin-top:-47px;
+}
+@media (min-width: 30em) and (max-width: 50em) {
+.menu{
+background: #2B2B2B;
+width:100%;
+height:55px;
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+position:fixed;
+top:0;
+left:0;
+z-index:999;
+-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255,255,255,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255,255,255,0);
+}
+iframe{
+width:0vw;
+height: calc(100% + 47px);
+position:fixed;
+top:75px;
+left:0px;
+margin-top:-47px;
+}
+h7{
+opacity:1;
+}
+.menu-link{
+user-select:none;
+width:25%;
+height:55px;
+display:flex;
+justify-content:center;
+color:white;
+text-decoration:none;
+align-items: center;
+font-size:22px;
+transition:.2s;
+}
+.menu-link:hover{
+background:#3F4143;
+}
+.block{
+width:100%;
+height:55px;
+}}
+.menu-link{
+user-select:none;
+width:18vw;
+height:55px;
+display:flex;
+justify-content:center;
+color:white;
+text-decoration:none;
+align-items: center;
+}
+.menu-link:hover{
+background:#3F4143;
+}
+img{
+width:100%;
+height:100%;
+}
+h2,h1{
+margin:20px;
+color:white;
+}
+#author{
+position:absolute;
+bottom:10px;
+left:0px;
+font-size:25px;
+z-index:1001;
+}
+#gamename{
+position:absolute;
+bottom:40px;
+left:0px;
+font-size:30px;
+z-index:1002;
+}
+a{
+text-decoration:none;
+color:#0095FF;
+}
+</style>
+</head>
+<body>
+<h7>Please turn your screen to play</h7>
+</body>
+</html>

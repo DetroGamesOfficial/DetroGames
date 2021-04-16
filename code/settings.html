@@ -1,0 +1,182 @@
+<html>
+<head>
+<script>
+if(localStorage.getItem('username') === null){
+localStorage.setItem('username', 'NewUser'+Math.floor(Math.random() * 999));
+}
+var username = localStorage.getItem("username");
+
+function reset () {
+   var username = document.getElementById("username-text").value;
+   document.getElementById("username").innerText = "Username: " + username;
+   localStorage.setItem("username", username);
+}
+
+</script>
+<title>Detrogames - Fun Free Games</title>
+<meta content="The place to find epic games for free." property="og:description">
+    <meta content="https://detrogames.com/new/play" property="og:url">
+    <meta content="https://cdn.discordapp.com/attachments/752340216395595796/766122031648604200/costume3_2_1.png" property="og:image">
+<meta name="viewport" content="width=device-width, initial-scale=.5">
+<style>
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+body{
+margin:0;
+font-family: 'Varela Round', sans-serif;
+font-size:30px;
+text-align:center;
+background:#212121;
+}
+.menu{
+background: #2B2B2B;
+width:100%;
+height:55px;
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+position:fixed;
+top:0;
+left:0;
+z-index:999;
+-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255,255,255,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255,255,255,0);
+}
+.menu-link{
+user-select:none;
+width:25%;
+height:55px;
+display:flex;
+justify-content:center;
+color:white;
+text-decoration:none;
+align-items: center;
+font-size:22px;
+transition:.2s;
+}
+.menu-link:hover{
+background:#3F4143;
+}
+img{
+width:100%;
+height:100%;
+}
+.block{
+width:100%;
+height:25px;
+}
+h2,h1{
+margin:0px;
+color:white;
+}
+h1{
+margin:0px;
+height:100px;
+display:flex;
+line-height:100px;
+justify-content:center;
+font-size:35px;
+}
+.flex{
+display:flex;
+text-align:center;
+justify-content:center;
+margin:20px;
+}
+.input{
+user-select: none;
+text-decoration:none;
+color:grey;
+width:300px;
+height:100px;
+border:none;
+border-radius:30px;
+outline:none;
+text-align:center;
+font-size:2.5vw;
+font-family: 'Varela Round', sans-serif;bac
+}
+#button{
+user-select:none;
+border-radius:30px;
+cursor:pointer;
+font-size:25px;
+outline:none;
+border:none;
+background: #2B2B2B;
+color:white;
+font-family: 'Varela Round', sans-serif;
+width:200px;
+margin-left:15px;
+}
+@media (min-width: 30em) and (max-width: 80em) {
+#pya{
+margin-top:20vh;
+}
+  }
+.light-b{
+user-select:none;
+width:50vw;
+height:20vw;
+margin-left:25%;
+margin-top:2%;
+border-radius:60px;
+}
+.button1{
+user-select:none;
+background:#505050;
+color:white;
+width:45vw;
+height:10vh;
+line-height:10vh;
+border-radius:60px;
+display:flex;
+justify-content:center;
+text-decoration:none;
+margin-left:28%;
+margin-top:20px;
+}
+@media (min-width: 30em) and (max-width: 80em) {
+.button1{
+width:85vw;
+margin-left:8%;
+}
+  }
+#pya{
+user-select:none;
+}
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="block"></div>
+<div class="menu">
+<a href="games" class="menu-link">Games</a>
+<a href="originals" class="menu-link">Originals</a>
+<a href="about" class="menu-link">About</a>
+<a href="settings" class="menu-link">Settings</a>
+</div>
+<div class="light-b">
+<h1 id="settings">Settings</h1>
+<div class="flex">
+<input id="username-text" class="input" placeholder="Username" maxlength = "15"></input>
+<button onClick="reset();" id="button">Change Username</button>
+</div>
+<script>
+var username = localStorage.getItem("username");document.write('<h1 id="username">username: '+username+'</h1>')
+</script>
+
+
+</div>
+
+
+<script>
+var mode = localStorage.getItem("mode");
+var mrg = localStorage.getItem("mrg");
+
+</script>
+</body>
+</html>
